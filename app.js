@@ -23,12 +23,15 @@ function populateData()
       const cityElement = document.createElement('div');
       const phoneElement = document.createElement('div');
       const companyElement = document.createElement('div');
+      const websiteElement = document.createElement('div');
+      // const companyElement = document.createElement('div');
 
       //mapping the data to the elements
       nameElement.innerText = contact.name;
       emailElement.innerText = contact.email;
       cityElement.innerText = contact.address.city;
       phoneElement.innerText = contact.phone;
+      websiteElement.innerText = contact.website;
       companyElement.innerText = contact.company.name;
 
       //Forming the HTML structure
@@ -36,8 +39,9 @@ function populateData()
       contactElement.append(emailElement)
       contactElement.append(cityElement)
       contactElement.append(phoneElement)
+      contactElement.append(websiteElement)
       contactElement.append(companyElement)
-
+      
       gridElement.append(contactElement)
 
     })
